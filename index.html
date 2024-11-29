@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light Toggle</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+    img {
+      width: 150px;
+      height: auto;
+      margin: 20px 0;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Light Bulb Control</h2>
+
+  <!-- Light bulb image -->
+  <img id="lightBulb" src="off.png" alt="Light Bulb">
+
+  <!-- Buttons -->
+  <br>
+  <button onclick="turnOn()">Turn on the light</button>
+  <button onclick="turnOff()">Turn off the light</button>
+
+  <script>
+    // Function to display the "on" image
+    function turnOn() {
+      document.getElementById('lightBulb').src = 'on.png'; // Replace 'on.png' with your "light on" image file path
+    }
+
+    // Function to display the "off" image
+    function turnOff() {
+      document.getElementById('lightBulb').src = 'off.png'; // Replace 'off.png' with your "light off" image file path
+    }
+  </script>
+</body>
+</html>
